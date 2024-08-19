@@ -65,6 +65,10 @@ export const authOptoins: NextAuthOptions = {
       }
       return session
     }
-  }
+  },
+  session:{
+    strategy:"jwt"
+  },
+  secret:process.env.NEXTAUTH_SECRET
 
 }
